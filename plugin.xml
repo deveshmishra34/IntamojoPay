@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova.plugin.instamojopayment" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>IntamojoPayment</name>
+    <js-module name="IntamojoPayment" src="www/IntamojoPayment.js">
+        <clobbers target="IntamojoPayment" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="IntamojoPayment">
+                <param name="android-package" value="cordova.plugin.instamojopayment.IntamojoPayment" />
+            </feature>
+        </config-file>
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+            <activity android:label="Web Activity" android:name="cordova.plugin.instamojopayment.WebActivity"/>
+        </config-file>
+
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/IntamojoPayment.java" target-dir="src/cordova/plugin/instamojopayment/IntamojoPayment" />
+        <source-file src="src/android/WebActivity.java" target-dir="src/cordova/plugin/instamojopayment/IntamojoPayment" />
+        <source-file src="src/android/activity_web.xml" target-dir="res/layout"/>
+    </platform>
+</plugin>

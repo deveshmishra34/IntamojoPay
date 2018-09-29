@@ -1,0 +1,17 @@
+{
+  "name": "cordova.plugin.instamojopayment",
+  "version": "1.0.0",
+  "description": "This plugin is for instamojo payment",
+  "cordova": {
+    "id": "cordova.plugin.instamojopayment",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Devesh mishra",
+  "license": "ISC"
+}
