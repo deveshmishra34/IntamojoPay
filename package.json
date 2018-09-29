@@ -12,6 +12,14 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "Devesh mishra",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deveshmishra34/IntamojoPay.git"
+  },
+  "author": "Devesh Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deveshmishra34/IntamojoPay/issues"
+  },
+  "homepage": "https://github.com/deveshmishra34/IntamojoPay#readme"
 }
