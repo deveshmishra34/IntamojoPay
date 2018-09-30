@@ -14,7 +14,7 @@ import android.webkit.WebViewClient;
 import android.annotation.TargetApi;
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
-import io.ionic.cracker.R;
+import xyz.penpencil.arjunclasses.R;
 
 public class WebActivity extends Activity {
 
