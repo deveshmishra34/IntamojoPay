@@ -30,6 +30,10 @@ public class WebActivity extends Activity {
 
         setContentView(getApplication().getResources().getIdentifier("activity_web", "layout", package_name));
         // getActionBar().hide();
+        android.app.ActionBar toolbar = getActionBar();
+        if (toolbar != null) {
+            toolbar.hide();
+        }
         webView = findViewById(R.id.webView);
         url = getIntent().getStringExtra("url");
 
