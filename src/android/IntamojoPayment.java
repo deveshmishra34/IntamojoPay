@@ -12,14 +12,22 @@ import org.json.JSONObject;
 
 import android.content.Intent;
 import android.content.Context;
-import android.os.Bundle;
+import android.content.ClipData;
+import android.content.ContentResolver;
+import android.webkit.MimeTypeMap;
+import android.os.Build;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.ArrayList;
 import android.util.Log;
+import android.os.Bundle;
 
 /**
  * This class echoes a string called from JavaScript.
  */
 public class IntamojoPayment extends CordovaPlugin {
     private CallbackContext PUBLIC_CALLBACKS = null;
+	private static final String LOG_TAG = "Instamojo Plugin";
 
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
